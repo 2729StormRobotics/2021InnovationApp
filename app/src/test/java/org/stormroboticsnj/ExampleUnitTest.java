@@ -1,4 +1,4 @@
-package com.example.otium;
+package org.stormroboticsnj;
 
 import org.junit.Test;
 
