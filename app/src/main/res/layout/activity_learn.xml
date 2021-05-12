@@ -1,62 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LearnActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Learn"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Fact of the Day"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:layout_height="192dp"
+        android:layout_width="match_parent">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="356dp"
-        android:layout_height="81dp"
-        android:text="Fact of the day:  Your heart is about the size of your fist, and weighs about as much as a softball"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:toolbarId="@+id/toolbar"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
 
-    <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="172dp"
-        android:layout_height="372dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            app:contentScrim="?attr/colorPrimary">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Featured Video"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/videoView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".LearnActivity">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="177dp"
+                android:layout_height="44dp"
+                android:text="Flashcards"
+                app:backgroundTint="#3B6CFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/button"
+                tools:layout_editor_absoluteY="592dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="177dp"
+                android:layout_height="44dp"
+                android:text="MORE VIDEOS"
+                app:backgroundTint="#FF3BF5"
+                app:layout_constraintEnd_toStartOf="@+id/button2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="592dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fact of the Day:"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="128dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="356dp"
+                android:layout_height="81dp"
+                android:text="Fact of the day:  Your heart is about the size of your fist, and weighs about as much as a softball"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/textView4"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                tools:layout_editor_absoluteX="27dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Video:"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/videoView"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                tools:layout_editor_absoluteX="128dp" />
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="172dp"
+                android:layout_height="300dp"
+                app:layout_constraintBottom_toTopOf="@+id/button"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                tools:layout_editor_absoluteX="122dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
