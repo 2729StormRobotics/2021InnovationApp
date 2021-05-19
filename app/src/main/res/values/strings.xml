@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Otium</string>
+    <string name="journaling_main_page">Journaling Main Page</string>
 </resources>
