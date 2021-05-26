@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.stormroboticsnj">
+    package="org.stormroboticsnj.otium">
 
     <application
         android:allowBackup="true"
@@ -14,9 +14,15 @@
         <activity android:name=".CustomizeActivity" />
 
 
-        <activity android:name=".LearnActivity" />
+        <activity
+            android:name=".LearnActivity"
+            android:label="Learn"
+            android:parentActivityName=".MainActivity"/>
 
-        <activity android:name=".JournalActivity" />
+        <activity
+            android:name=".JournalActivity"
+            android:label="Journal"
+            android:parentActivityName=".MainActivity"/>
 
 
         <activity android:name=".MainActivity">

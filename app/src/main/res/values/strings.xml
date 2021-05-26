@@ -15,4 +15,9 @@
     <string name="skin">Skin</string>
     <string name="clothing">Clothing</string>
     <string name="journaling_main_page">Journaling Main Page</string>
+    <string name="learn">Learn</string>
+    <string name="journal">Journal</string>
+    <string name="mood_tracking">Mood Tracking</string>
+    <string name="journaling">Journaling</string>
+    <string name="sleeping_habits">Sleeping Habits</string>
 </resources>
