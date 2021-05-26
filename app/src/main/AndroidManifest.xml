@@ -9,20 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Otium">
-        <activity android:name=".AvatarActivity" />
-        <activity android:name=".ShopActivity" />
-        <activity android:name=".CustomizeActivity" />
+
+        <activity
+            android:name=".AvatarActivity"
+            android:label="Your Avatar"
+            android:parentActivityName=".MainActivity" />
+
+        <activity
+            android:name=".ShopActivity"
+            android:label="Shop"
+            android:parentActivityName=".AvatarActivity" />
+
+        <activity
+            android:name=".CustomizeActivity"
+            android:label="Customize"
+            android:parentActivityName=".AvatarActivity" />
 
 
         <activity
             android:name=".LearnActivity"
             android:label="Learn"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
 
         <activity
             android:name=".JournalActivity"
             android:label="Journal"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
 
 
         <activity android:name=".MainActivity">

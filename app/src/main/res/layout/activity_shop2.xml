@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.123"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/avatar" />
 
     <TextView
         android:id="@+id/textView9"
@@ -34,7 +34,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hair"
-        app:backgroundTint="#ECBB73"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -47,7 +46,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Clothing"
-        app:backgroundTint="#ECBB73"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
@@ -60,7 +58,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Accessories"
-        app:backgroundTint="#ECBB73"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
@@ -164,7 +161,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Other"
-        app:backgroundTint="#ECBB73"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"

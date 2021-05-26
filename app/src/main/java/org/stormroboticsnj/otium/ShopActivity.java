@@ -1,4 +1,4 @@
-package org.stormroboticsnj;
+package org.stormroboticsnj.otium;
 
 import androidx.appcompat.app.AppCompatActivity;
 

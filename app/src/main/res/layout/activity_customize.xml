@@ -15,14 +15,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.075"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/avatar" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/accessories"
-        app:backgroundTint="#EDAF54"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +33,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hair"
-        app:backgroundTint="#EDAF54"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +44,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/skin"
-        app:backgroundTint="#EDAF54"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +55,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/clothing"
-        app:backgroundTint="#EDAF54"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -20,4 +20,6 @@
     <string name="mood_tracking">Mood Tracking</string>
     <string name="journaling">Journaling</string>
     <string name="sleeping_habits">Sleeping Habits</string>
+    <string name="avatar">Avatar</string>
+    <string name="alt_otium_logo">Otium Logo</string>
 </resources>
