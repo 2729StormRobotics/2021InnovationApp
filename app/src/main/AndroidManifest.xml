@@ -9,10 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Otium">
+        <activity android:name=".AvatarActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".CustomizeActivity" />
 
-        <activity android:name=".LearnActivity" android:exported="true"></activity>
 
-        <activity android:name=".JournalActivity"></activity>
+        <activity android:name=".LearnActivity" />
+
+        <activity android:name=".JournalActivity" />
+
 
         <activity android:name=".MainActivity">
             <intent-filter>
