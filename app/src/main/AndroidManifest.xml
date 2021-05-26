@@ -9,16 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Otium">
-        <activity android:name=".shop2"></activity>
-        <activity android:name=".customize2" />
-        <activity
-            android:name=".Shop"
-            android:label="@string/title_activity_shop"
-            android:theme="@style/Theme.Otium.NoActionBar" />
-        <activity
-            android:name=".Customize"
-            android:label="@string/title_activity_customize"
-            android:theme="@style/Theme.Otium.NoActionBar" />
+        <activity android:name=".AvatarActivity"></activity>
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".CustomizeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
