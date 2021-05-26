@@ -20,9 +20,9 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView8"
+        android:layout_width="357dp"
+        android:layout_height="195dp"
         android:text="TextView" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
