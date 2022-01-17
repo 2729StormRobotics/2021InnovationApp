@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int id = v.getId();
         if (id == R.id.main_btn_learn) {// To start another activity use this intent syntax
             // The first argument is this class (context), and the second argument is the activity you want to start
-            Intent learnIntent = new Intent(MainActivity.this, LearnActivity.class);
+            Intent learnIntent = new Intent(MainActivity.this, CustomizableActivity.class);
             startActivity(learnIntent);
         } else if (id == R.id.main_btn_journal) {
             Intent journalIntent = new Intent(MainActivity.this, JournalActivity.class);
